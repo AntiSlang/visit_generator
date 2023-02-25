@@ -16,4 +16,5 @@ function test() {
 
 $(document).ready(function () {
     $('.send').on('click', test);
+    $(".phone").mask("+7(999)999-9999")
 });
