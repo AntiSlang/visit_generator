@@ -1,4 +1,17 @@
 # Сайт - генератор визиток
+## Как запустить сервер?
+'''bash
+#Склонируйте репозиторий любым для Вас удобным способом
+    git clone git@github.com:vaIegit/visit_generator.git 
+#Установите необходимые зависимости
+    pip3 install -r requirments.txt 
+#Сделайте миграции
+    python3 visit_gen/manage.py migrate
+#Создайте пароль для доступа в админ панель
+    python3 visit_gen/manage.py createsuperuser
+#Запустите сервер
+    python3 visit_gen/manage.py runserver
+'''
 ## Описание
 Проект по созданию сайта - генератора визиток.
 При переходе на этот сайт пользватель будет вводить ФИО, телефон, EMail, Ссылки на соц сети(VK, Telegram, GitHub и т.д.). После ввода этих данных сайт будет отдавать ссылку на визитку и qr код содержащий её.
