@@ -4,7 +4,7 @@
 #Склонируйте репозиторий любым для Вас удобным способом
     git clone git@github.com:vaIegit/visit_generator.git 
 #Установите необходимые зависимости
-    pip3 install -r requirments.txt 
+    pip3 install -r requirements.txt 
 #Сделайте миграции
     python3 visit_gen/manage.py migrate
 #Создайте пароль для доступа в админ панель
