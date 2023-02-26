@@ -6,7 +6,8 @@
         <div class="col-lg shadow p-3 mb-2">
             <h3 class="text-center">Найти визитку по ID: </h3>
             <br>
-            <form>
+            <form method="post">
+                {% csrf_token %}
                 <div class="form-group text-center">
                     <input type="text" class="form-control p-2" id="foundById" placeholder="Введите id визитки">
                 </div>
@@ -19,7 +20,8 @@
             <h3 class="text-center">Создайте свою визитку </h3>
             <h6 class="text-center">для этого заполните следующие поля:</h6>
             <br>
-            <form>
+            <form method="post">
+                {% csrf_token %}
                 <div class="form-group">
                     <label class="mb-3" for="Names"><i class="fa-solid fa-person"></i> ФИО: </label>
                     <input type="text" class="form-control" id="Names" placeholder="Иванов Иван Иванович">
