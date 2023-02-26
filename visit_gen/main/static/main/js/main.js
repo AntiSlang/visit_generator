@@ -1,18 +1,4 @@
 
-function test() {
-    var name = $('#Names').val();
-    var pass = $('#admin_pass').val();
-    console.log(name, pass);
-
-    if (name=="") {
-        alert("Введите имя администратора");
-    }
-    if (pass=="") {
-        alert("Введите пароль администратора");
-    }
-
-}
-
 // Пример стартового JavaScript для отключения отправки форм при наличии недопустимых полей
 (function () {
   'use strict'
@@ -36,6 +22,5 @@ function test() {
 
 
 $(document).ready(function () {
-    $('#Send').on('click', test);
     $(".phone").mask("+7(999)999-9999")
 });
