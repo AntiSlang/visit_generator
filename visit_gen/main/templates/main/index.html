@@ -3,52 +3,55 @@
 {% block title %}Генератор визиток{% endblock %}
 {% block content %}
     <div class="container">
-        <div class="col align-items-center">
-            <div class="col-lg shadow p-5 mb-5">
-                <h3 class="text-center">Найти по ID: </h3>
-                <br>
-                <form>
-                    <div class="form-group text-center">
-                        <input type="text" class="form-control p-2" id="foundById" placeholder="Введите id визитки">
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-primary">Поиск</button>
-                </form>
-            </div>
+        <div class="col-lg shadow p-3 mb-2">
+            <h3 class="text-center">Найти визитку по ID: </h3>
             <br>
-            <div class="col-lg shadow p-5 mb-5">
-                <h3 class="text-center">Создайте свою визитку: </h3>
+            <form>
+                <div class="form-group text-center">
+                    <input type="text" class="form-control p-2" id="foundById" placeholder="Введите id визитки">
+                </div>
                 <br>
-                <form>
-                    <div class="form-group">
-                        <label class="mb-3" for="Names">Введите свои ФИО: </label>
-                        <input type="text" class="form-control" id="Names" aria-describedby="emailHelp" placeholder="ФИО">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label class="mb-3" for="Names">Введите свой номер телефона: </label>
-                        <input type="text" class="form-control phone" id="PhoneNumber" placeholder="">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Введите адрес электронной почты">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="Telegram" aria-describedby="emailHelp" placeholder="Введите ссылку на ваш канал Телеграмм (если есть)">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="VK" aria-describedby="emailHelp" placeholder="Введите ссылку на вашу страницу VK (если есть)">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="YouTube" aria-describedby="emailHelp" placeholder="Введите ссылку на ваш YouTube канал (если есть)">
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-primary">Создать визитку</button>
-                </form>
-            </div>
+                <button type="submit" class="btn btn-primary">Поиск</button>
+            </form>
+        </div>
+        <br>
+        <div class="col-lg shadow p-3 mb-2">
+            <h3 class="text-center">Создайте свою визитку </h3>
+            <h6 class="text-center">для этого заполните следующие поля:</h6>
+            <br>
+            <form>
+                <div class="form-group">
+                    <label class="mb-3" for="Names">ФИО: </label>
+                    <input type="text" class="form-control" id="Names" placeholder="Иванов Иван Иванович">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label class="mb-3" for="Names">Номер телефона: </label>
+                    <input type="text" class="form-control phone" id="PhoneNumber" placeholder="+7(___)___-____">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label class="mb-3" for="Names">Адрес электронной почты: </label>
+                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="example@mail.ru">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label class="mb-3" for="Names"><i class="fa-brands fa-telegram"></i> Telegram: </label>
+                    <input type="text" class="form-control" id="Telegram" placeholder="https://t.me/example">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label class="mb-3" for="Names"><i class="fa-brands fa-vk"></i> VK: </label>
+                    <input type="text" class="form-control" id="VK" placeholder="Введите ссылку на вашу страницу VK (если есть)">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label class="mb-3" for="Names"><i class="fa-brands fa-youtube"></i> YouTube: </label>
+                    <input type="text" class="form-control" id="YouTube" placeholder="Введите ссылку на ваш YouTube канал (если есть)">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Создать визитку</button>
+            </form>
         </div>
     </div>
 {% endblock %}
