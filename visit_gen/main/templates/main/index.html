@@ -3,7 +3,7 @@
 {% block title %}Генератор визиток{% endblock %}
 {% block content %}
     <div class="container">
-        <div class="col-lg shadow p-3 mb-2">
+        <div class="col-lg shadow p-3 mb-2 rounded-4">
             <h3 class="text-center">Найти визитку по ID: </h3>
             <br>
             <form method="post" class="needs-validation" novalidate>
@@ -19,14 +19,14 @@
             </form>
         </div>
         <br>
-        <div class="col-lg shadow p-3 mb-2">
+        <div class="col-lg shadow p-3 mb-2 rounded-4">
             <h3 class="text-center">Создайте свою визитку </h3>
             <h6 class="text-center">для этого заполните следующие поля:</h6>
             <br>
             <form method="post" class="needs-validation" novalidate>
                 {% csrf_token %}
                 <div class="form-group">
-                    <label class="mb-3 form-label" for="Names"><i class="fa-solid fa-person"></i> ФИО: </label>
+                    <label class="mb-3 form-label"><i class="fa-solid fa-person"></i> ФИО: </label>
                     <input type="text" class="form-control" name="name" placeholder="Иванов Иван Иванович" required>
                     <div class="invalid-feedback">
                         Введите ФИО!
@@ -34,7 +34,7 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="mb-3 form-label" for="Names"><i class="fa-solid fa-phone"></i> Номер телефона: </label>
+                    <label class="mb-3 form-label"><i class="fa-solid fa-phone"></i> Номер телефона: </label>
                     <input type="text" class="form-control phone" name="phone_number" placeholder="+7(___)___-____" required>
                     <div class="invalid-feedback">
                         Введите корректный номер телефона!
@@ -42,7 +42,7 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="mb-3 form-label" for="Names"><i class="fa-solid fa-envelope"></i> Адрес электронной почты: </label>
+                    <label class="mb-3 form-label"><i class="fa-solid fa-envelope"></i> Адрес электронной почты: </label>
                     <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="example@mail.ru" required>
                     <div class="invalid-feedback">
                         Введите корректный email!
@@ -50,17 +50,17 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="mb-3 form-label" for="Names"><i class="fa-brands fa-telegram"></i> Telegram: </label>
+                    <label class="mb-3 form-label"><i class="fa-brands fa-telegram"></i> Telegram: </label>
                     <input type="text" class="form-control" name="telegram" placeholder="https://t.me/...">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="mb-3 form-label" for="Names"><i class="fa-brands fa-vk"></i> VK: </label>
+                    <label class="mb-3 form-label"><i class="fa-brands fa-vk"></i> VK: </label>
                     <input type="text" class="form-control" name="vk" placeholder="https://vk.ru/...">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="mb-3 form-label" for="Names"><i class="fa-brands fa-youtube"></i> YouTube: </label>
+                    <label class="mb-3 form-label"><i class="fa-brands fa-youtube"></i> YouTube: </label>
                     <input type="text" class="form-control" name="youtube" placeholder="https://youtube.com/...">
                 </div>
                 <br>
