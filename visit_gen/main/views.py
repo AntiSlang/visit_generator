@@ -17,7 +17,7 @@ def index(request):
         youtube = request.POST.get('youtube')
         newvc = VisitCard(name=name, phone_number=phone_number, email=email, telegram=telegram, vk=vk, youtube=youtube)
         newvc.save()
-        return HttpResponse(f'Ваша визитка создана, её id={newvc.id}')
+        return render(request, 'main/index.html')
 def visitcard(request):
     return render(request, 'main/visitcard.html')
 
