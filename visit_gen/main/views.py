@@ -21,3 +21,6 @@ def index(request):
 def visitcard(request):
     return render(request, 'main/visitcard.html')
 
+def PageNotFound(request):
+    return render(request, 'main/404.html')
+

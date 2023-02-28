@@ -19,5 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('vc', views.visitcard)
+    path('vc', views.visitcard),
+    path('404', views.PageNotFound)
 ]
