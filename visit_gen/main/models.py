@@ -4,6 +4,7 @@ from django.db import models
 
 
 class VisitCard(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, blank=False)
     phone_number = models.CharField(max_length=12, blank=False)
     email = models.EmailField(blank=False)
@@ -12,4 +13,4 @@ class VisitCard(models.Model):
     youtube = models.URLField(blank=True, max_length=255)
 
     def __str__(self):
-        return self.name
+        return f'{self.id} {self.name} {self.email} '

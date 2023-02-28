@@ -23,11 +23,11 @@
             <h3 class="text-center">Создайте свою визитку </h3>
             <h6 class="text-center">для этого заполните следующие поля:</h6>
             <br>
-            <form action="vc" method="post" class="needs-validation" novalidate>
+            <form method="post" class="needs-validation" novalidate>
                 {% csrf_token %}
                 <div class="form-group">
                     <label class="mb-3 form-label" for="Names"><i class="fa-solid fa-person"></i> ФИО: </label>
-                    <input type="text" class="form-control" id="Names" placeholder="Иванов Иван Иванович" required>
+                    <input type="text" class="form-control" name="name" placeholder="Иванов Иван Иванович" required>
                     <div class="invalid-feedback">
                         Введите ФИО!
                     </div>
@@ -35,7 +35,7 @@
                 <br>
                 <div class="form-group">
                     <label class="mb-3 form-label" for="Names"><i class="fa-solid fa-phone"></i> Номер телефона: </label>
-                    <input type="text" class="form-control phone" id="PhoneNumber" placeholder="+7(___)___-____" required>
+                    <input type="text" class="form-control phone" name="phone_number" placeholder="+7(___)___-____" required>
                     <div class="invalid-feedback">
                         Введите корректный номер телефона!
                     </div>
@@ -43,7 +43,7 @@
                 <br>
                 <div class="form-group">
                     <label class="mb-3 form-label" for="Names"><i class="fa-solid fa-envelope"></i> Адрес электронной почты: </label>
-                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="example@mail.ru" required>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="example@mail.ru" required>
                     <div class="invalid-feedback">
                         Введите корректный email!
                     </div>
@@ -51,17 +51,17 @@
                 <br>
                 <div class="form-group">
                     <label class="mb-3 form-label" for="Names"><i class="fa-brands fa-telegram"></i> Telegram: </label>
-                    <input type="text" class="form-control" id="Telegram" placeholder="https://t.me/...">
+                    <input type="text" class="form-control" name="telegram" placeholder="https://t.me/...">
                 </div>
                 <br>
                 <div class="form-group">
                     <label class="mb-3 form-label" for="Names"><i class="fa-brands fa-vk"></i> VK: </label>
-                    <input type="text" class="form-control" id="VK" placeholder="https://vk.ru/...">
+                    <input type="text" class="form-control" name="vk" placeholder="https://vk.ru/...">
                 </div>
                 <br>
                 <div class="form-group">
                     <label class="mb-3 form-label" for="Names"><i class="fa-brands fa-youtube"></i> YouTube: </label>
-                    <input type="text" class="form-control" id="YouTube" placeholder="https://youtube.com/...">
+                    <input type="text" class="form-control" name="youtube" placeholder="https://youtube.com/...">
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary" id="Send">Создать визитку</button>
