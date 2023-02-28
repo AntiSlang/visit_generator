@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from main.models import VisitCard
+from .models import VisitCard
 
 # Register your models here.
 
