@@ -20,6 +20,3 @@ def index(request):
         return render(request, 'main/index.html')
 def visitcard(request):
     return render(request, 'main/visitcard.html')
-def PageNotFound(request):
-    return render(request, 'main/404.html')
-
