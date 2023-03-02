@@ -3,15 +3,23 @@
 {% block title %}Визитная карточка{% endblock %}
 {% block content %}
 <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-start">
         <div class="col-lg">
-            <div class="m-1 p-2 shadow">
+            <div class="m-1 p-2 shadow rounded-4">
                 Здесь будет картинка
             </div>
         </div>
         <div class="col-lg">
-            <div class="m-1 p-2 shadow">
-                 Данные пользователя
+            <div class="m-1 p-2 shadow rounded-4">
+                 Данные пользователя:
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">{{name}}</li>
+                    <li class="list-group-item">{{phone_number}}</li>
+                    <li class="list-group-item">{{email}}</li>
+                    <li class="list-group-item">{{telegram}}</li>
+                    <li class="list-group-item">{{youtube}}</li>
+                    <li class="list-group-item">{{vk}}</li>
+                </ol>
             </div>
         </div>
     </div>

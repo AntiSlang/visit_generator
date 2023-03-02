@@ -19,5 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('vc', views.visitcard),
+    path('<int:id>/', views.visitcard)
 ]

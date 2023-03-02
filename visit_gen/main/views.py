@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import VisitCard
 
+
 # Create your views here.
 
 
@@ -17,6 +18,22 @@ def index(request):
         youtube = request.POST.get('youtube')
         newvc = VisitCard(name=name, phone_number=phone_number, email=email, telegram=telegram, vk=vk, youtube=youtube)
         newvc.save()
-        return render(request, 'main/index.html')
-def visitcard(request):
-    return render(request, 'main/visitcard.html')
+        url = f'/{newvc.id}'
+        return redirect(url)
+
+
+def visitcard(request, id):
+    try:
+        vc = VisitCard.objects.get(pk=id)
+    except VisitCard.DoesNotExist:
+        return render(request, '404.html')
+    data = {
+        'name': vc.name,
+        'phone_number': vc.phone_number,
+        'email': vc.email,
+        'telegram': vc.telegram,
+        'vk': vc.vk,
+        'youtube': vc.youtube
+    }
+
+    return render(request, 'main/visitcard.html', data)
