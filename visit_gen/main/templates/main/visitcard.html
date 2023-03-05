@@ -6,19 +6,24 @@
     <div class="row align-items-start">
         <div class="col-lg">
             <div class="m-1 p-2 shadow rounded-4">
-                Здесь будет картинка
+                <img src = "{{img_href}}" class="img-fluid" alt="Фото пользователя">
             </div>
         </div>
         <div class="col-lg">
             <div class="m-1 p-2 shadow rounded-4">
-                 Данные пользователя:
+                 Контакты пользователя:
                 <ol class="list-group list-group-numbered">
-                    <li class="list-group-item">{{name}}</li>
-                    <li class="list-group-item">{{phone_number}}</li>
-                    <li class="list-group-item">{{email}}</li>
-                    <li class="list-group-item">{{telegram}}</li>
-                    <li class="list-group-item">{{youtube}}</li>
-                    <li class="list-group-item">{{vk}}</li>
+                    <li class="p-4 display-3 text-center"><mark>{{name}}</mark></li>
+                    <br>
+                    <li class="p-2 display-5">Мой номер: <i class="text-muted">{{phone_number}}</i></li>
+
+                    <li class="p-2 display-5">Мой e-mail: <i class="text-muted">{{email}}</i></li>
+                    <br>
+                    <li class="p-2 display-5 text-center text-muted"><b>Другие контакты:</b></li>
+                    <br>
+                    <li class="p-2 display-5" id="varElementT"><i class="text-muted">{{telegram}}</i></li>
+                    <li class="p-2 display-5" id="varElementY"><i class="text-muted">{{youtube}}</i></li>
+                    <li class="p-2 display-5" id="varElementV"><i class="text-muted">{{vk}}</i></li>
                 </ol>
             </div>
         </div>
