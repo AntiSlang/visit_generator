@@ -1,3 +1,5 @@
+let url = window.location.href;
+new QRCode(document.getElementById("qrcode"), url);
 
 // Пример стартового JavaScript для отключения отправки форм при наличии недопустимых полей
 (function () {
@@ -20,14 +22,18 @@
     })
 })()
 
-$(document).ready(function () {
-    $(".phone").mask("+7(999)999-9999")
-    $('#copyP').on("click", Copy)
-});
-
-document.forms.searchbyid.onsubmit = function() {
+document.forms.searchbyid.onsubmit=function(){
     event.preventDefault()
     var id = this.id.value;
     window.location.assign(id)
     return false;
 };
+
+
+$(document).ready(function () {
+    $(".phone").mask("+7(999)999-9999")
+
+});
+
+
+

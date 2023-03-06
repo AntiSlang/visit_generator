@@ -13,4 +13,4 @@ class VisitCard(models.Model):
     youtube = models.URLField(blank=True, max_length=255)
 
     def __str__(self):
-        return f' ( " id " --> {self.id} ) - - - - - ( " ФИО " --> {self.name} ) - - - - - ( " email " --> {self.email} ) '
+        return f' ( " id " --> {self.id} ) - - - - - ( " ФИО " --> {self.name} ) - - - - - ( " email " --> {self.email} ) - - - - - ( " Телеграм " --> {self.telegram} ) '

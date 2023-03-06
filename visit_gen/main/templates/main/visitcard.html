@@ -4,11 +4,12 @@
 {% block content %}
 <div class="container">
     <div class="row align-items-start">
-        <div class="col-lg">
-            <div class=" m-1 p-2 shadow rounded-4">
+        <div class="qr col-lg">
+            <div class="m-1 p-2 shadow rounded-4">
                 <div id="qrcode"></div>
+                QR-код со ссылкой на вашу страницу:
                 <script type="text/javascript">
-                    new QRCode(document.getElementById("qrcode"), "{{url}}");
+
                 </script>
             </div>
         </div>
