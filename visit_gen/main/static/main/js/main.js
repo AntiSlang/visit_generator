@@ -22,14 +22,6 @@ new QRCode(document.getElementById("qrcode"), url);
     })
 })()
 
-document.forms.searchbyid.onsubmit=function(){
-    event.preventDefault()
-    var id = this.id.value;
-    window.location.assign(id)
-    return false;
-};
-
-
 $(document).ready(function () {
     $(".phone").mask("+7(999)999-9999")
 

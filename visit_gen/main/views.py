@@ -1,3 +1,4 @@
+
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import VisitCard
@@ -38,3 +39,11 @@ def visitcard(request, id):
     }
 
     return render(request, 'main/visitcard.html', data)
+
+
+def search(request):
+    if request.method == 'GET':
+        return redirect(index)
+    elif request.method == 'POST':
+        id = request.POST.get('id')
+        return redirect(f'{id}/')
