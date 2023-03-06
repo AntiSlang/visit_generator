@@ -17,7 +17,7 @@ def index(request):
         telegram = request.POST.get('telegram')
         vk = request.POST.get('vk')
         youtube = request.POST.get('youtube')
-        newvc = VisitCard(name=name, phone_number=phone_number, email=email, telegram=telegram, vk=vk, youtube=youtube, url=url)
+        newvc = VisitCard(name=name, phone_number=phone_number, email=email, telegram=telegram, vk=vk, youtube=youtube)
         newvc.save()
         url = f'/{newvc.id}'
         return redirect(url)
