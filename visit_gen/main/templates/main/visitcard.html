@@ -5,32 +5,38 @@
 <div class="container">
     <div class="row align-items-start">
         <div class="qr col-lg">
-            <div class="m-1 p-2 shadow rounded-4">
+            <div class="m-1 p-2 shadow text-center card">
+                <h5 class="text-center">QR-код со ссылкой на вашу страницу:</h5>
+                <br>
                 <div id="qrcode"></div>
-                QR-код со ссылкой на вашу страницу:
-                <script type="text/javascript">
-
-                </script>
+                <br>
             </div>
         </div>
         <div class="col-lg">
-            <div class="m-1 p-2 shadow rounded-4">
-                 Контакты пользователя:
+            <div class="m-1 p-2 shadow  card">
+                <h5 class="text-center">Контакты пользователя:</h5>
+                <br>
                 <ol class="list-group list-group-numbered">
                     <li class="p-4 display-4 text-center mark">{{name}}</li>
+                    <br>
+                    <hr>
                     <br>
                     <li class="p-2 h3">Мой номер: <i class="text-muted">{{phone_number}}</i></li>
 
                     <li class="p-2 h3">Мой e-mail: <i class="text-muted">{{email}}</i></li>
                     <br>
-                    <li class="p-2 display-4 text-center text-muted"><b>Другие контакты:</b></li>
+                    <hr>
                     <br>
-                    <li class="p-2 h3" id="varElementT"><i class="text-muted">{{telegram}}</i></li>
-                    <li class="p-2 h3" id="varElementY"><i class="text-muted">{{youtube}}</i></li>
-                    <li class="p-2 h3" id="varElementV"><i class="text-muted">{{vk}}</i></li>
+                    <li class="p-2 h3 text-center" id="other"><b>Другие контакты:</b></li>
+                    <br>
+                    <li class="p-2 h3" id="varElementT"><i class="text-muted" id="T">{{telegram}}</i></li>
+                    <li class="p-2 h3" id="varElementY"><i class="text-muted" id="Y">{{youtube}}</i></li>
+                    <li class="p-2 h3" id="varElementV"><i class="text-muted" id="V">{{vk}}</i></li>
                 </ol>
             </div>
         </div>
     </div>
 </div>
+
+
 {% endblock %}

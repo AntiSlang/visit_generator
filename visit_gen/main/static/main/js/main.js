@@ -1,4 +1,5 @@
 let url = window.location.href;
+
 new QRCode(document.getElementById("qrcode"), url);
 
 // Пример стартового JavaScript для отключения отправки форм при наличии недопустимых полей
@@ -22,9 +23,10 @@ new QRCode(document.getElementById("qrcode"), url);
     })
 })()
 
+
+
 $(document).ready(function () {
     $(".phone").mask("+7(999)999-9999")
-
 });
 
 
