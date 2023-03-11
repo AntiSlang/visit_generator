@@ -1,4 +1,3 @@
-
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import VisitCard
@@ -35,7 +34,7 @@ def visitcard(request, id):
         'telegram': vc.telegram,
         'vk': vc.vk,
         'youtube': vc.youtube,
-        'url' : 'test'
+        'url': 'test'
     }
 
     return render(request, 'main/visitcard.html', data)
@@ -47,3 +46,8 @@ def search(request):
     elif request.method == 'POST':
         id = request.POST.get('id')
         return redirect(f'{id}/')
+
+
+def sec(request):
+    resp = request.is_secure()
+    return HttpResponse(resp)
