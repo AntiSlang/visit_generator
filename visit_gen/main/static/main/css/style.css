@@ -3,9 +3,27 @@ html header {
     0 0 0.5em #161644, 0 0 0.2em #fc0580;
 }
 
+h1, h2, h3, h4, h5, h6, h7, h8, a, li {
+    color: #525252;
+    text-decoration: none;
+}
+
+li.name {
+    background-color: rgba(235, 250, 210, 0.60);
+    border-radius: 15px;
+}
+
+input {
+    box-shadow: 1px 1px 2px rgba(146, 225, 253, 0.53), 0 0 1em rgba(6, 6, 10, 0.45), 0 0 0.2em #ff58b6;
+}
+
 div {
-    text-shadow: 1px 1px 2px #73d9fd,
-    0 0 1em rgba(6, 6, 10, 0.65), 0 0 0.2em #ff9fd5;
+    text-shadow: 1px 1px 2px #73d9fd, 0 0 1em rgba(6, 6, 10, 0.65), 0 0 0.2em #ff9fd5;
+}
+
+.sh {
+    box-shadow: 1px 1px 2px rgba(146, 225, 253, 0.53), 0 0 1em rgba(6, 6, 10, 0.45), 0 0 0.2em #ff58b6;
+    background-color: rgba(220, 200, 200, 0.53);
 }
 
 .gradient-main{
@@ -24,7 +42,7 @@ button {
     color: #fff;
     padding: 2%;
     border-radius: 8px;
-    border: 1px solid #7e7e7e;
+    border: 1px solid #8e8e8e;
     box-shadow: 1px 1px 2px rgba(146, 225, 253, 0.53), 0 0 1em rgba(6, 6, 10, 0.45), 0 0 0.2em #ff58b6;
 }
 
@@ -66,17 +84,15 @@ label {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
 
-p {
-    text-align: left;
 }
 
 #qrcode img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
+    box-shadow: #fff 0px 0px 30px;
 }
 
 .card {
