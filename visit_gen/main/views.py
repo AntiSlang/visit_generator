@@ -16,8 +16,7 @@ def index(request):
         telegram = request.POST.get('telegram')
         vk = request.POST.get('vk')
         youtube = request.POST.get('youtube')
-
-        newvc = VisitCard(name=name, phone_number=phone_number, email=email, telegram=telegram, vk=vk, youtube=youtube)
+        newvc = VisitCard(name=name, phone_number=phone_number, email=email, telegram='<a href="' + telegram + '">' + telegram + '</>', vk=vk, youtube=youtube)
         newvc.save()
         url = f'/{newvc.id}'
         return redirect(url)
@@ -31,10 +30,10 @@ def visitcard(request, id):
     data = {
         'name': vc.name,
         'phone_number': vc.phone_number,
-        'email': f'<a href="mailto:{vc.email}">{vc.email}</a>',
-        'telegram': f'<a href="{vc.telegram}">{vc.telegram}</a>',
-        'vk': f'<a href="{vc.vk}">{vc.vk}</a>',
-        'youtube': f'<a href="{vc.youtube}">{vc.youtube}</a>',
+        'email': vc.email,
+        'telegram': vc.telegram,
+        'vk': vc.vk,
+        'youtube': vc.youtube,
         'url': 'test'
     }
 
