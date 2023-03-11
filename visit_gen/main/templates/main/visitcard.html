@@ -4,17 +4,10 @@
 {% block content %}
 <div class="container">
     <div class="row align-items-start">
-        <div class="qr col-lg">
-            <div class="m-1 p-2 shadow text-center card">
-                <h5 class="text-center">QR-код со ссылкой на эту визитку:</h5>
-                <br>
-                <div id="qrcode"></div>
-                <br>
-            </div>
-        </div>
         <div class="col-lg">
-            <div class="m-1 p-2 shadow  card">
+            <div class="m-1 p-2 shadow card">
                 <h5 class="text-center">Контакты пользователя:</h5>
+                <hr>
                 <br>
                 <ol class="list-group list-group-numbered">
                     <li class="p-4 display-4 text-center mark">{{name}}</li>
@@ -33,6 +26,17 @@
                     <li class="p-2 h3" id="varElementY"><i class="text-muted" id="Y">{{youtube}}</i></li>
                     <li class="p-2 h3" id="varElementV"><i class="text-muted" id="V">{{vk}}</i></li>
                 </ol>
+            </div>
+        </div>
+        <div class="qr col-lg">
+            <div class="m-1 p-2 shadow text-center card text-shadow-1">
+                <h5 class="text-center">QR-код со ссылкой на эту визитку:</h5>
+                <hr>
+                <br>
+                <p id="qrcode">
+                </p>
+                <br>
+                <h6 class="text-left">Наведите на него камеру смартфона</h6>
             </div>
         </div>
     </div>
