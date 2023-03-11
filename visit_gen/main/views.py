@@ -31,10 +31,10 @@ def visitcard(request, id):
     data = {
         'name': vc.name,
         'phone_number': vc.phone_number,
-        'email': f'<a href="mailto:{vc.email}">{vc.email}</a>',
-        'telegram': f'<a href="{vc.telegram}">{vc.telegram}</a>',
-        'vk': f'<a href="{vc.vk}">{vc.vk}</a>',
-        'youtube': f'<a href="{vc.youtube}">{vc.youtube}</a>',
+        'email': vc.email,
+        'telegram': vc.telegram,
+        'vk': vc.vk,
+        'youtube': vc.youtube,
         'url': 'test'
     }
 
