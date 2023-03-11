@@ -1,6 +1,11 @@
-html {
-    text-shadow: 1px 1px 2px #2daacd,
-    0 0 1em blue, 0 0 0.2em #f3c;
+html header {
+    text-shadow: 1px 1px 2px #0082de,
+    0 0 0.5em #161644, 0 0 0.2em #fc0580;
+}
+
+div {
+    text-shadow: 1px 1px 2px #73d9fd,
+    0 0 1em rgba(6, 6, 10, 0.65), 0 0 0.2em #ff9fd5;
 }
 
 .gradient-main{
@@ -11,6 +16,44 @@ html {
 .gradient-main-inv{
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(252, 176, 69,1) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1) 100%);
+}
+
+button {
+    background: rgb(131,58,180);
+    background: linear-gradient(-60deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgb(241, 161, 50) 100%);
+    color: #fff;
+    padding: 2%;
+    border-radius: 8px;
+    border: 1px solid #7e7e7e;
+    box-shadow: 1px 1px 2px rgba(146, 225, 253, 0.53), 0 0 1em rgba(6, 6, 10, 0.45), 0 0 0.2em #ff58b6;
+}
+
+label {
+    color: #525252;
+}
+
+.fa-youtube {
+    color: #ea0303;
+}
+
+.fa-telegram {
+    color: #2c88c4;
+}
+
+.fa-vk {
+    color: #005cf0;
+}
+
+.fa-envelope {
+    color: #818181;
+}
+
+.fa-phone {
+    color: #000000;
+}
+
+.fa-person {
+    color: #000f96;
 }
 
 #qr{
