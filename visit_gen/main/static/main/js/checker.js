@@ -22,6 +22,6 @@ if (youtube != '') {
 }
 
 if (telegram == '' && vk == '' && youtube == '') {
-    document.getElementById("other").innerHTML = '<h5 class="text-muted p-2">Пользователь не указал дополнительные контакты.</h5>'
+    document.getElementById("other").innerHTML = '<h5 class="text-muted p-2">Дополнительные контакты не указаны.</h5>'
     document.getElementById("clickable").innerHTML = ''
 }
