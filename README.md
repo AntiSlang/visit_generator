@@ -8,9 +8,10 @@
 * Админ-панель в которой будут отображаться все визитки
 ## To Do list:
 - :heavy_check_mark: Выучить фреймворк Django
-- :heavy_check_mark: Написать базовый FrontEnd
+- :heavy_check_mark: Написать базовый FrontEnd (скелет сайта)
 - :heavy_check_mark: Продумать базу данных
 - :heavy_check_mark: Написать BackEnd
+- :heavy_check_mark: Завершить FrontEnd часть
 - :heavy_check_mark: Выгрузить на хостинг
 
 ## Как запустить сервер? Для этого необходимо:
