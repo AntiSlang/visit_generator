@@ -15,8 +15,7 @@
 - :heavy_check_mark: Выгрузить на хостинг
 
 ## Как запустить сервер? Для этого необходимо:
-### :warning: ВНИМАНИЕ
-В целях безопасности замените SECRET_KEY в visit_gen/visit_gen/settings.py
+
 ```bash
 #Склонируйте репозиторий любым для Вас удобным способом
 git clone git@github.com:vaIegit/visit_generator.git 
@@ -29,3 +28,6 @@ python3 visit_gen/manage.py createsuperuser
 #Запустите сервер
 python3 visit_gen/manage.py runserver
 ```
+
+### :warning: ВНИМАНИЕ
+В целях безопасности замените SECRET_KEY в visit_gen/visit_gen/settings.py
