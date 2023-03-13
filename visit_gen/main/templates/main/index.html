@@ -1,9 +1,9 @@
 {% extends 'main/layout.html' %}
-{% block title_page %}Генератор визиток{% endblock %}
-{% block title %}Генератор визиток{% endblock %}
+{% block title_page %}VisGen | Главная{% endblock %}
+{% block title %}{% endblock %}
 {% block content %}
     <div class="container">
-        <div class="col-lg p-3 mb-2 rounded-4 sh">
+        <div class="col-lg p-5 mb-2 rounded-4 sh">
             <h3 class="text-center">Найти визитку по ID: </h3>
             <br>
             <form method="post" action="search" name="searchbyid" class="needs-validation" novalidate>
@@ -19,9 +19,9 @@
             </form>
         </div>
         <br>
-        <div class="col-lg sh p-3 mb-2 rounded-4 ">
+        <div class="col-lg sh p-5 mb-2 rounded-4 ">
             <h3 class="text-center">Создайте свою визитку </h3>
-            <h6 class="text-center">для этого заполните следующие поля:</h6>
+            <h6 class="text-center">Для этого заполните следующие поля:</h6>
             <br>
             <form method="post" class="needs-validation" novalidate>
                 {% csrf_token %}
