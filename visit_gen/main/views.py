@@ -35,7 +35,8 @@ def visitcard(request, id):
         'telegram': vc.telegram,
         'vk': vc.vk,
         'youtube': vc.youtube,
-        'url': 'test'
+        'url': 'test',
+        'id': vc.id
     }
 
     return render(request, 'main/visitcard.html', data)
